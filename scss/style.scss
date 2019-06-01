@@ -1,0 +1,97 @@
+// variable 用 sassMap 管理
+// z-index 統一管理
+// 記得 Run一下 AutoPrefixer
+
+@charset 'UTF-8';
+
+// 功能性
+@import './utils/variable';
+
+@import './utils/function';
+
+@import './utils/mixin';
+
+@import './utils/extend';
+
+@import './utils/animation';
+
+// Reset (normalize/reset/bs4擇一)
+// base  自訂元件設定
+@import './reset/base';
+
+// Layout
+@import './layout/body';
+
+@import './layout/nav';
+
+@import './layout/footer';
+
+// Components
+@import './components/components';
+
+// Page
+// @import './page/homePage';
+
+$contentW: 1200;
+
+// Smooth Scroll
+html {
+  scroll-behavior: smooth;
+}
+
+// 實用架構
+.warp {
+  max-width: $contentW;
+  margin: 0 auto;
+}
+
+// 實做區
+.inputBar {
+  position: relative;
+
+  i {
+    position: absolute;
+    top: 10px;
+    left: 7px;
+    transform: scale(1.3);
+  }
+
+  input {
+    padding-left: 27px;
+  }
+}
+
+.modal {
+  z-index: 30;
+
+  visibility: hidden;
+  position: fixed;
+  top: 20vh;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.existIcon {
+  position: absolute;
+  right: 32px;
+  top: 32px;
+  width: 32px;
+  height: 32px;
+  opacity: 0.3;
+  &:hover { opacity: 1; }
+  &:before,
+  &:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 33px;
+    width: 2px;
+    background-color: #333;
+  }
+  &:before { transform: rotate(45deg); }
+  &:after { transform: rotate(-45deg); }
+}
+
+
+// media 必放在最下面
+@import './media/media';

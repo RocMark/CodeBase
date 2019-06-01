@@ -1,0 +1,34 @@
+// map-get(color,grey) => color(grey)
+//* 其他 SassMap 記得去補寫 @Function
+$color: (
+  text: #000,
+  primary: #007bff,
+  secondary: #6c757d,
+  success: #28a745;
+  info: #17a2b8,
+  danger: #dc3545,
+  warning: #ffc107,
+  muted: #6c757d,
+  light: #f8f9fa;
+  dark: #343a40;
+);
+
+$hover-c: (
+  primary: #0062cc,
+  secondary: #545b62,
+  success: #1e7e34;
+  info: #117a8b,
+  danger: #dc3545,
+  warning: #d39e00,
+  light: #dae0e5;
+  dark: #1d2124;
+);
+
+$social-c: (
+  github: #24292E,
+  youtube: #FF0000,
+  line: #2CC52C,
+  facebook:#3b5999,
+  linkedin: #0077b5,
+  twitter:#1da1f3,
+);

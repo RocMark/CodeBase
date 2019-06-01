@@ -1,0 +1,36 @@
+// base
+$browser-default-fz: 16px !default; 
+$base-fz: 1rem;
+$base-ls: $base-fz * 0.08;
+$base-line-height: 1.5;
+
+/* rem 基礎單位 放在 html 中 */
+html {
+  font-size: $browser-default-fz;
+}
+
+// font-size (fz)
+$font-xxl: $base-fz * 2.25;
+$font-xl: $base-fz * 1.5;
+$font-l: $base-fz * 1.25;
+$font-m: $base-fz * 1.125;
+$font-b: $base-fz;
+$font-s: $base-fz * 0.8;
+$font-es: $base-fz * 0.75;
+
+// letter-spacing (ls)
+$lsp-xxl: $base-ls * 2.25;
+$lsp-xl: $base-ls * 1.5;
+$lsp-l: $base-ls * 1.25;
+$lsp-m: $base-ls * 1.125;
+$lsp-b: $base-ls;
+$lsp-s: $base-ls * 0.8;
+$lsp-es: $base-ls * 0.75;
+
+// font-weight
+$fw-thin: 100;
+$fw-light: 300;
+$fw-regular: 400;
+$fw-medium: 500;
+$fw-bold: 700;
+$fw-black: 900;

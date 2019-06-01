@@ -1,0 +1,27 @@
+$xl-media: 1200px;
+$lg-media: 992px;
+$md-media: 768px;
+$sm-media: 576px;
+
+//! 注意 min-width 還是 max-width
+
+@mixin media-xl() {
+  @media all and (min-width: $xl-media) {
+    @content;
+  }
+}
+@mixin media-lg() {
+  @media all and (min-width: $lg-media) {
+    @content;
+  }
+}
+@mixin media-md() {
+  @media all and (min-width: $md-media) {
+    @content;
+  }
+}
+@mixin media-sm() {
+  @media all and (min-width: $sm-media) {
+    @content;
+  }
+}

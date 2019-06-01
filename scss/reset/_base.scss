@@ -1,0 +1,42 @@
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style-position: inside;
+}
+
+figure {
+  margin: 0;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input {
+  padding: 8px 16px;
+
+  &[type='button'],
+  &[type='reset'],
+  &[type='submit'],
+    {
+    padding: 8px 16px;
+    cursor: pointer;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+}
+
+button {
+  cursor: pointer;
+}
